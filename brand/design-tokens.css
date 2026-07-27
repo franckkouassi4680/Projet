@@ -1,0 +1,135 @@
+/*
+  Franck Kouassi — Design Tokens
+  Identité visuelle premium — Data Analyst
+  Source : brand/brand-charter.md
+*/
+
+:root {
+  /* ---------- Couleurs ---------- */
+  --color-primary: #0066FF;      /* Data Blue — logo, titres, CTA */
+  --color-secondary: #0B1F3A;    /* Deep Navy — fonds premium */
+  --color-accent: #00C896;       /* Data Green — KPI, performance */
+  --color-neutral: #F7F9FC;      /* Cloud White — fonds clairs */
+  --color-text: #202124;         /* Graphite — texte courant */
+  --color-white: #FFFFFF;
+
+  /* États sémantiques (badges, texte, icônes) */
+  --color-info: var(--color-primary);
+  --color-success: var(--color-accent);
+  --color-warning: #F5A623;
+  --color-danger: #E5484D;
+
+  /* Palette "chart-safe" — variantes validées (contraste + daltonisme)
+     pour les MARKS de graphiques (barres, lignes, points).
+     Cf. skill dataviz : #00C896 et #F5A623 seuls ne passent pas le
+     contraste sur fond clair ; on les fonce légèrement pour les tracés
+     tout en gardant les couleurs de marque intactes ailleurs. */
+  --chart-info: #0066FF;
+  --chart-success: #00A67E;
+  --chart-warning: #D98A00;
+  --chart-danger: #E5484D;
+
+  /* Dégradé signature (bleu -> vert) */
+  --gradient-data: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+
+  /* ---------- Typographie ---------- */
+  --font-heading: "Inter", "Montserrat", -apple-system, sans-serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  --fw-bold: 700;
+  --fw-semibold: 600;
+  --fw-medium: 500;
+  --fw-regular: 400;
+
+  --fs-h1: clamp(2.25rem, 4vw, 3.5rem);
+  --fs-h2: clamp(1.75rem, 3vw, 2.5rem);
+  --fs-h3: 1.5rem;
+  --fs-subtitle: 1.125rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+
+  /* ---------- Espacements ---------- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* ---------- Rayons & ombres (style SaaS) ---------- */
+  --radius-button: 12px;
+  --radius-card: 16px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 4px 24px rgba(11, 31, 58, 0.08);
+  --shadow-card-hover: 0 8px 32px rgba(11, 31, 58, 0.14);
+
+  /* ---------- Animations ---------- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-base: 350ms;
+  --duration-slow: 500ms;
+}
+
+/* ---------- Boutons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-body);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-button);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform var(--duration-fast) var(--ease-standard),
+              box-shadow var(--duration-fast) var(--ease-standard),
+              background-color var(--duration-fast) var(--ease-standard);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn-secondary:hover {
+  background: rgba(0, 102, 255, 0.08);
+}
+
+/* ---------- Cards SaaS ---------- */
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-md);
+  transition: box-shadow var(--duration-base) var(--ease-standard),
+              transform var(--duration-base) var(--ease-standard);
+}
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+}
+
+.card-kpi__icon { color: var(--color-primary); }
+.card-kpi__value {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+.card-kpi__label {
+  font-size: var(--fs-small);
+  color: var(--color-text);
+  opacity: 0.7;
+}
