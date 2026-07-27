@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-labelledby="fkWhiteTitle">
+  <title id="fkWhiteTitle">FK — monogramme blanc (fonds foncés)</title>
+  <defs>
+    <linearGradient id="fkGradWhite" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#00C896"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 20 H62 V30 H44 V46 H58 V56 H44 V80 H32 Z" fill="#F7F9FC"/>
+  <path d="M70 20 H80 V46 L100 20 H112 L90 48 L114 80 H101 L82 55 L80 80 H70 Z" fill="#F7F9FC"/>
+  <polyline points="74,68 84,58 92,62 104,44" fill="none" stroke="url(#fkGradWhite)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="74" cy="68" r="3.5" fill="#00C896"/>
+  <circle cx="84" cy="58" r="3.5" fill="#00C896"/>
+  <circle cx="92" cy="62" r="3.5" fill="#0066FF"/>
+  <circle cx="104" cy="44" r="3.5" fill="#0066FF"/>
+</svg>

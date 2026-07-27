@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" width="520" height="140" role="img" aria-labelledby="fkPrimaryTitle">
+  <title id="fkPrimaryTitle">FRANCK KOUASSI — Data Analyst</title>
+  <defs>
+    <linearGradient id="fkGradPrimary" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#00C896"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Monogramme -->
+  <g transform="translate(0,10)">
+    <rect x="0" y="0" width="120" height="120" rx="24" fill="#0B1F3A"/>
+    <path d="M32 30 H62 V40 H44 V56 H58 V66 H44 V90 H32 Z" fill="#F7F9FC"/>
+    <path d="M70 30 H80 V56 L100 30 H112 L90 58 L114 90 H101 L82 65 L80 90 H70 Z" fill="#F7F9FC"/>
+    <polyline points="74,78 84,68 92,72 104,54" fill="none" stroke="url(#fkGradPrimary)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="74" cy="78" r="3.5" fill="#00C896"/>
+    <circle cx="84" cy="68" r="3.5" fill="#00C896"/>
+    <circle cx="92" cy="72" r="3.5" fill="#0066FF"/>
+    <circle cx="104" cy="54" r="3.5" fill="#0066FF"/>
+  </g>
+
+  <!-- Texte -->
+  <g transform="translate(146,0)">
+    <text x="0" y="60" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="34" letter-spacing="1" fill="#0B1F3A">FRANCK KOUASSI</text>
+    <text x="0" y="88" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="18" fill="#0066FF">Data Analyst</text>
+    <text x="0" y="110" font-family="Inter, Arial, sans-serif" font-weight="400" font-size="13" fill="#202124">Data Intelligence · Décision par la donnée</text>
+  </g>
+</svg>
