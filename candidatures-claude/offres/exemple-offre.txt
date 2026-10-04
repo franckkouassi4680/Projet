@@ -1,0 +1,8 @@
+URL: https://exemple.com/offre/123
+Entreprise: DataCorp
+Contact: recrutement@datacorp.example
+Poste: Data Analyst Junior (CDI) — Abidjan / hybride
+
+Missions : construire des tableaux de bord, analyser les données clients en SQL et Python,
+présenter les résultats aux équipes métier.
+Profil : Bac+5 data/statistiques, maîtrise de Python et SQL, bonne communication.
